@@ -1,8 +1,23 @@
 aid: tumblbug
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/tumblbug.png
 name: Tumblbug
-description: 'Tumblbug is a company surfaced as a portfolio company of dcm-ventures and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Tumblbug (텀블벅) is a South Korean reward-based crowdfunding platform for creators, where
+  makers launch projects and backers pledge funds to bring creative works — comics, games, publishing, design,
+  music, film and more — to life. Surfaced as a portfolio company of DCM Ventures and added to the API Evangelist
+  network for enrichment. As of this pass Tumblbug publishes a consumer-facing web platform (help center, creator
+  guides, pricing/advertising, terms and privacy pages) but exposes no public developer API, documentation, or
+  open API surface; this profile therefore carries identity and domain-security signals only.'
 url: https://raw.githubusercontent.com/api-evangelist/tumblbug/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Crowdfunding
+- Creators
+- Funding
+- Korea
+- Marketplace
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/tumblbug-domain-security.yml
 - type: Website
   url: https://tumblbug.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
